@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8555588922B8C01400A24DDD /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555588822B8C01400A24DDD /* MyTabBar.swift */; };
 		85E445BA22953ADE00D2BCA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E445B922953ADE00D2BCA2 /* AppDelegate.swift */; };
 		85E445BC22953ADE00D2BCA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E445BB22953ADE00D2BCA2 /* ViewController.swift */; };
 		85E445BF22953ADE00D2BCA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E445BD22953ADE00D2BCA2 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8555588822B8C01400A24DDD /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		85E445B622953ADE00D2BCA2 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E445B922953ADE00D2BCA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E445BB22953ADE00D2BCA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				85E445B922953ADE00D2BCA2 /* AppDelegate.swift */,
 				85E445BB22953ADE00D2BCA2 /* ViewController.swift */,
 				85E445CB2295417100D2BCA2 /* MainTabBarViewController.swift */,
+				8555588822B8C01400A24DDD /* MyTabBar.swift */,
 				85E445CD2295417F00D2BCA2 /* BaseViewController.swift */,
 				85E445CF229541A300D2BCA2 /* MainNavigationController.swift */,
 				85E445D12295429100D2BCA2 /* HomeViewController.swift */,
@@ -159,6 +162,7 @@
 				85E445D0229541A300D2BCA2 /* MainNavigationController.swift in Sources */,
 				85E445D42295429F00D2BCA2 /* VideoViewController.swift in Sources */,
 				85E445D8229542B400D2BCA2 /* MineViewController.swift in Sources */,
+				8555588922B8C01400A24DDD /* MyTabBar.swift in Sources */,
 				85E445CC2295417100D2BCA2 /* MainTabBarViewController.swift in Sources */,
 				85E445D6229542AE00D2BCA2 /* HuoShanViewController.swift in Sources */,
 				85E445CE2295417F00D2BCA2 /* BaseViewController.swift in Sources */,

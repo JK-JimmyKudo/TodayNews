@@ -42,16 +42,16 @@ class MainTabBarViewController: UITabBarController {
         
         
         // 修改标签栏选中时文字颜色、字体
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14.0)], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13)], for: .selected)
         // 修改标签栏未选中时文字颜色、字体
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15.0)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13)], for: .normal)
         // 设置字体偏移
         //UITabBarItem.appearance().titlePositionAdjustment = UIOffsetMake(0.0, 0.0)
         
         let nav = MainNavigationController.init(rootViewController: childController)
-        
+
         nav.tabBarItem = barItem;
-        
+        setValue(MyTabBar(), forKey: "tabBar")
         self.addChild(nav)
     }
     
