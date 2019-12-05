@@ -8,6 +8,8 @@ target 'News' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SnapKit'
+  pod 'HandyJSON'
+  
   # Pods for News
 
 end

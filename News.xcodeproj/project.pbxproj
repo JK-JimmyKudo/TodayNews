@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		78DBCF831DD87AD834359E24 /* Pods_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C57B229B743AB6D305E4D80 /* Pods_News.framework */; };
+		8528AD24238FB80B0077144B /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AD23238FB80B0077144B /* MyTableViewCell.swift */; };
 		8555588922B8C01400A24DDD /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555588822B8C01400A24DDD /* MyTabBar.swift */; };
+		85A11660238BBA3A0042C815 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A1165F238BBA3A0042C815 /* Const.swift */; };
+		85A11663238BC57C0042C815 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A11662238BC57C0042C815 /* NetworkTool.swift */; };
+		85A11665238E48640042C815 /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A11664238E48640042C815 /* MyCellModel.swift */; };
+		85B6FB172398B082008A6999 /* Maintabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B6FB162398B082008A6999 /* Maintabbar.swift */; };
 		85E445BA22953ADE00D2BCA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E445B922953ADE00D2BCA2 /* AppDelegate.swift */; };
 		85E445BF22953ADE00D2BCA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E445BD22953ADE00D2BCA2 /* Main.storyboard */; };
 		85E445C122953AE500D2BCA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E445C022953AE500D2BCA2 /* Assets.xcassets */; };
@@ -26,7 +31,12 @@
 		0114C10D0FC2DEB124A85320 /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
 		6C57B229B743AB6D305E4D80 /* Pods_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7078BDA6112A5A435DD248F2 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
+		8528AD23238FB80B0077144B /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		8555588822B8C01400A24DDD /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		85A1165F238BBA3A0042C815 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		85A11662238BC57C0042C815 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		85A11664238E48640042C815 /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
+		85B6FB162398B082008A6999 /* Maintabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maintabbar.swift; sourceTree = "<group>"; };
 		85E445B622953ADE00D2BCA2 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E445B922953ADE00D2BCA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E445BE22953ADE00D2BCA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +75,8 @@
 		85A11644238BADE70042C815 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				85A11661238BC5390042C815 /* Tools */,
+				85A1165E238BBA090042C815 /* Define */,
 				85A11659238BAEE50042C815 /* Mine */,
 				85A1164F238BAE400042C815 /* AppDelegate */,
 				85A1164E238BAE2F0042C815 /* Main */,
@@ -142,6 +154,7 @@
 			children = (
 				85E445CB2295417100D2BCA2 /* MainTabBarViewController.swift */,
 				8555588822B8C01400A24DDD /* MyTabBar.swift */,
+				85B6FB162398B082008A6999 /* Maintabbar.swift */,
 				85E445CD2295417F00D2BCA2 /* BaseViewController.swift */,
 				85E445CF229541A300D2BCA2 /* MainNavigationController.swift */,
 			);
@@ -228,6 +241,7 @@
 		85A1165A238BAEEF0042C815 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8528AD23238FB80B0077144B /* MyTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +256,7 @@
 		85A1165C238BAEF10042C815 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				85A11664238E48640042C815 /* MyCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +267,22 @@
 				85E445D7229542B400D2BCA2 /* MineViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		85A1165E238BBA090042C815 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				85A1165F238BBA3A0042C815 /* Const.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		85A11661238BC5390042C815 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				85A11662238BC57C0042C815 /* NetworkTool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		85E445AD22953ADE00D2BCA2 = {
@@ -408,15 +439,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A11663238BC57C0042C815 /* NetworkTool.swift in Sources */,
 				85E445D0229541A300D2BCA2 /* MainNavigationController.swift in Sources */,
 				85E445D42295429F00D2BCA2 /* VideoViewController.swift in Sources */,
 				85E445D8229542B400D2BCA2 /* MineViewController.swift in Sources */,
 				8555588922B8C01400A24DDD /* MyTabBar.swift in Sources */,
 				85E445CC2295417100D2BCA2 /* MainTabBarViewController.swift in Sources */,
+				8528AD24238FB80B0077144B /* MyTableViewCell.swift in Sources */,
 				85E445D6229542AE00D2BCA2 /* HuoShanViewController.swift in Sources */,
+				85A11665238E48640042C815 /* MyCellModel.swift in Sources */,
 				85E445CE2295417F00D2BCA2 /* BaseViewController.swift in Sources */,
 				85E445BA22953ADE00D2BCA2 /* AppDelegate.swift in Sources */,
 				85E445D22295429100D2BCA2 /* HomeViewController.swift in Sources */,
+				85B6FB172398B082008A6999 /* Maintabbar.swift in Sources */,
+				85A11660238BBA3A0042C815 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 975BDH8M3G;
+				DEVELOPMENT_TEAM = TK9S87Q4H5;
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -584,7 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 975BDH8M3G;
+				DEVELOPMENT_TEAM = TK9S87Q4H5;
 				INFOPLIST_FILE = News/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -39,19 +39,18 @@ class MainTabBarViewController: UITabBarController {
         //设置tabBar的图片和文字
         let barItem = UITabBarItem.init(title: title as String, image: UIImage.init(named: nomalImage as String)?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage.init(named: selecImage as String)?.withRenderingMode(.alwaysOriginal))
         //2.更改字体颜色
-        
-        
-//        // 修改标签栏选中时文字颜色、字体
-//        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13)], for: .selected)
-//        // 修改标签栏未选中时文字颜色、字体
-//        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13)], for: .normal)
-        // 设置字体偏移
-//        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: 0.0)
+
+        // 修改标签栏选中时文字颜色、字体
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)], for: .selected)
+        // 修改标签栏未选中时文字颜色、字体
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)], for: .normal)
+//         设置字体偏移
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: 0.0)
         
         let nav = MainNavigationController.init(rootViewController: childController)
 
         nav.tabBarItem = barItem;
-        setValue(MyTabBar(), forKey: "tabBar")
+        setValue(Maintabbar(), forKey: "tabBar")
         self.addChild(nav)
     }
     
