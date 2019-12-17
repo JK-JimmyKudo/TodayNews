@@ -10,6 +10,25 @@ target 'News' do
   pod 'SnapKit'
   pod 'HandyJSON'
   
+  
+  pod 'Kingfisher'
+#  pod 'IBAnimatable'
+  pod 'SwiftTheme'
+#  pod 'RxSwift'
+#  pod 'RxCocoa'
+#  pod 'SQLite.swift'
+  pod 'SVProgressHUD'
+  pod 'MJRefresh'
+#  pod 'SGPagingView'
+  pod 'BMPlayer'
+  pod 'FDFullscreenPopGesture'
+  # pod 'Texture'
+  pod 'lottie-ios'
+  
+  
+  
+  
+  
   # Pods for News
 
 end
