@@ -10,6 +10,9 @@
 		78DBCF831DD87AD834359E24 /* Pods_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C57B229B743AB6D305E4D80 /* Pods_News.framework */; };
 		8528AD24238FB80B0077144B /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8528AD23238FB80B0077144B /* MyTableViewCell.swift */; };
 		8555588922B8C01400A24DDD /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555588822B8C01400A24DDD /* MyTabBar.swift */; };
+		855F3B2823A9D1FE00A689D7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F3B2723A9D1FE00A689D7 /* UITableView+Extension.swift */; };
+		855F3B2A23AB679D00A689D7 /* MyContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F3B2923AB679D00A689D7 /* MyContentCell.swift */; };
+		855F3B2C23ACA90A00A689D7 /* UICollectionView +Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855F3B2B23ACA90A00A689D7 /* UICollectionView +Extension.swift */; };
 		85A11660238BBA3A0042C815 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A1165F238BBA3A0042C815 /* Const.swift */; };
 		85A11663238BC57C0042C815 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A11662238BC57C0042C815 /* NetworkTool.swift */; };
 		85A11665238E48640042C815 /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A11664238E48640042C815 /* MyCellModel.swift */; };
@@ -33,6 +36,9 @@
 		7078BDA6112A5A435DD248F2 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
 		8528AD23238FB80B0077144B /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		8555588822B8C01400A24DDD /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		855F3B2723A9D1FE00A689D7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		855F3B2923AB679D00A689D7 /* MyContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentCell.swift; sourceTree = "<group>"; };
+		855F3B2B23ACA90A00A689D7 /* UICollectionView +Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView +Extension.swift"; sourceTree = "<group>"; };
 		85A1165F238BBA3A0042C815 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		85A11662238BC57C0042C815 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		85A11664238E48640042C815 /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
@@ -242,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				8528AD23238FB80B0077144B /* MyTableViewCell.swift */,
+				855F3B2923AB679D00A689D7 /* MyContentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +288,8 @@
 			isa = PBXGroup;
 			children = (
 				85A11662238BC57C0042C815 /* NetworkTool.swift */,
+				855F3B2723A9D1FE00A689D7 /* UITableView+Extension.swift */,
+				855F3B2B23ACA90A00A689D7 /* UICollectionView +Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -452,7 +461,10 @@
 				85E445BA22953ADE00D2BCA2 /* AppDelegate.swift in Sources */,
 				85E445D22295429100D2BCA2 /* HomeViewController.swift in Sources */,
 				85B6FB172398B082008A6999 /* Maintabbar.swift in Sources */,
+				855F3B2C23ACA90A00A689D7 /* UICollectionView +Extension.swift in Sources */,
 				85A11660238BBA3A0042C815 /* Const.swift in Sources */,
+				855F3B2823A9D1FE00A689D7 /* UITableView+Extension.swift in Sources */,
+				855F3B2A23AB679D00A689D7 /* MyContentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

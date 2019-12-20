@@ -28,10 +28,20 @@ class MineViewController: BaseViewController {
         self.view.addSubview(tempTableView)
         
       
-        self.tempTableView.register(MyTableViewCell.classForCoder(), forCellReuseIdentifier:"MyTableViewCell")
+//        self.tempTableView.register(MyTableViewCell.classForCoder(), forCellReuseIdentifier:"MyTableViewCell")
 
-
+        ///1.tableView调用hw_registerCell方法
+//        tempTableView.hw_registerCell(cell: MyTableViewCell.self)
         
+        self.tempTableView.hw_registerCell(cell: MyTableViewCell.self)
+        self.tempTableView.hw_registerCell(cell: MyContentCell.self)
+        
+        
+        
+//         UINib(nibName: "\(self)", bundle: nil) }
+
+        print("nibName == ","\(self)");
+
         NetworkTool.loadMyCelldata { (sections) in
                         
             let string = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
@@ -61,7 +71,8 @@ extension MineViewController:UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
+        
+        return  section == 1 ? 0 : 10
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -76,14 +87,32 @@ extension MineViewController:UITableViewDataSource,UITableViewDelegate {
         
         let model = self.sections[indexPath.section][indexPath.row]
         
-        let cell = tableView .dequeueReusableCell(withIdentifier: "MyTableViewCell") as! MyTableViewCell
-//        if (cell == nil) {
-//            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-//        }
+        
+        if model.text == "我的关注" {
+            let cell = tableView.hw_dequeueReusableCell(indexPath: indexPath) as MyContentCell
+            cell.tempLabel.text = model.text
+            cell.detailLabel.text = model.grey_text
+            return cell
+        }
+        
+        let cell = tableView.hw_dequeueReusableCell(indexPath: indexPath) as MyTableViewCell
+        
         cell.tempLabel.text = model.text
+        cell.detailLabel.text = model.grey_text
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return indexPath.section == 0 ? 100 : 50
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
 }
 
 
